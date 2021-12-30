@@ -1,16 +1,20 @@
-<img  id="goBtn"  class="pic-html" />             
-<script>
-        var webArr = ['https://taobao.com']
-        function RandomNum(Min, Max) {
-            var Range = Max - Min;
-            var Rand = Math.random();
-            var num = Min + Math.floor(Rand * Range);
-            return num;
-        }
+<img src="1.png" onclick="myfun()" id='mypic'>
+        
+        
+<script type="text/javascript">
+                function myfun(){
+ try{
+                    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                  window.location.href="https://taobao.com ";}
+                    else { window.location.href="jd.com ";}
 
-        var webLength = webArr.length;
-        var mathNum = RandomNum(0, webLength);
-        $('#goBtn').click(function () {
-            window.location.href = webArr[mathNum];
-        })
-</script>
+        }catch(e){}
+}  
+
+
+<style type="text/css">
+
+div,#mypic{
+	width:100%;
+}
+</style>
