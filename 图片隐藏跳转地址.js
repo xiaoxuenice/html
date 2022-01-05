@@ -10,7 +10,7 @@
 
         }catch(e){}
 }  
-
+</script>
 
 <style type="text/css">
 
