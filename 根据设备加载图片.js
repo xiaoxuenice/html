@@ -32,7 +32,7 @@ if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){
 
 
 
-
+<img onclick="myfun()" src="/static/images/1.jpg" >
 <script type="text/javascript">
 		function myfun(){
  try{
